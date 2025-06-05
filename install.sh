@@ -22,10 +22,6 @@ python3 -m venv $VENV_DIR
 echo "Activating virtual environment..."
 source $VENV_DIR/bin/activate
 
-# Upgrade pip, just in case you're using something from 2013
-echo "Upgrading pip..."
-pip install --upgrade pip
-
 # Install requirements
 if [ -f "requirements.txt" ]; then
     echo "Installing dependencies from requirements.txt..."

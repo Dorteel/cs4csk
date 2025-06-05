@@ -127,6 +127,16 @@
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
 </owl:Class>
 
+<owl:NamedIndividual rdf:about="#CommonSense_ConceptualSpace">
+  <rdf:type rdf:resource="#ConceptualSpace"/>
+  <has_concept rdf:resource="#Orange_Color"/>
+  <has_concept rdf:resource="#Orange_Fruit"/>
+  <has_domain rdf:resource="#Color_RGB"/>
+  <has_domain rdf:resource="#Weight_Domain"/>
+  <has_instance rdf:resource="#MostOrangeOrangeFruit"/>
+  <has_instance rdf:resource="#MostOrangeOrangeColor"/>
+</owl:NamedIndividual>
+
 <owl:NamedIndividual rdf:about="#Weight_Domain">
   <rdf:type rdf:resource="#Domain"/>
   <has_quality_dimension rdf:resource="#Weight"/>
@@ -142,6 +152,40 @@
 
 <owl:NamedIndividual rdf:about="#MetricKG">
   <rdf:type rdf:resource="#MeasurementSystem"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Color_RGB">
+  <rdf:type rdf:resource="#Domain"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Red_Value">
+  <rdf:type rdf:resource="#QualityDimension"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Green_Value">
+  <rdf:type rdf:resource="#QualityDimension"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Blue_Value">
+  <rdf:type rdf:resource="#QualityDimension"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Orange_Fruit">
+  <rdf:type rdf:resource="#Concept"/>
+  <has_prototypical_instance rdf:resource="#MostOrangeOrangeFruit"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MostOrangeOrangeFruit">
+  <rdf:type rdf:resource="#PrototypicalInstance"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Orange_Color">
+  <rdf:type rdf:resource="#Concept"/>
+  <has_prototypical_instance rdf:resource="#MostOrangeOrangeColor"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#MostOrangeOrangeColor">
+  <rdf:type rdf:resource="#PrototypicalInstance"/>
 </owl:NamedIndividual>
 
 
